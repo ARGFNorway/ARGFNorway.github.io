@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e25b8678b4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--header-->
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="../index.html">ARGFNorway</a></li>
+                        <li><a href="../sides/contact.html">Contact</a></li>
+                        <li><a href="../sides/projects.html">Projects</a></li>
+                    </ul>
+                    <a href="../sides/login.html"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+            </nav>
+            <div class="login">
+                <div class="login-box">
+                    <div class="button-box">
+                        <div id="button"></div>
+                        <button type="button" class="toggle-button" onclick="login()">Log In</button>
+                        <button type="button" class="toggle-button" onclick="register()">Register</button>
+                    </div>
+                    <form id="Login" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-button">Log In</button>
+                    </form>
+                    <form id="Register" class="input-group">
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="email" class="input-field" placeholder="Email Adress" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                        <button type="submit" class="submit-button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <section class="footer">
+            <h4>Website designed by ARGFNorway</h4>
+            <p>This website was made using HTML and CSS.</p>
+            <div class="icons">
+                <div class="an">
+                    <a href="https://www.youtube.com/channel/UCsKjQgIbXUiXxGEpESEKNsw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="ang">
+                    <a href="https://www.youtube.com/channel/UCvFVxTilLq9Pz1NQaUv8rrA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="dis">
+                    <a href="https://discord.gg/vyb6qphmXc" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </section>
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("Register");
+            var z = document.getElementById("button");
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+                z.style.background = "linear-gradient(to right, #ff914d, #ffbd59, #ffbd59)";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+                z.style.background = "linear-gradient(to right, #ffbd59, #ffbd59, #ff914d)";
+            }
+        </script>
+    </body>
+</html>
