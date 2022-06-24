@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Login with Fall Ground Technolegies Identification</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,10 @@
         <section class="header">
             <nav>
                 <div class="nav-links">
+                    <a href="../index.html"><img src="../images/ARGFNORWAY logo.png" alt=""></a>
                     <ul>
-                        <li><a href="../index.html">ARGFNorway</a></li>
-                        <li><a href="../sides/contact.html">Contact</a></li>
-                        <li><a href="../sides/projects.html">Projects</a></li>
+                        <li><a href="sides/contact.html">Contact</a></li>
+                        <li><a href="sides/projects.html">Projects</a></li>
                     </ul>
                     <a href="../sides/login.html"><i class="fa-solid fa-circle-user"></i></a>
                 </div>
@@ -30,14 +30,15 @@
                         <button type="button" class="toggle-button" onclick="register()">Register</button>
                     </div>
                     <form id="Login" class="input-group">
-                        <input type="text" class="input-field" placeholder="User Id" required>
-                        <input type="text" class="input-field" placeholder="Enter Password" required>
-                        <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                        <input type="text" class="input-field" placeholder="Username or E-mail adress" required>
+                        <input type="text" class="input-field" placeholder="Password" required>
+                        <input type="checkbox" class="chech-box"><a>Remember Password</a>
                         <button type="submit" class="submit-button">Log In</button>
+                        <button type="button" class="new-user-button" onclick="register()">Create new Account</button>
                     </form>
                     <form id="Register" class="input-group">
-                        <input type="text" class="input-field" placeholder="User Id" required>
-                        <input type="email" class="input-field" placeholder="Email Adress" required>
+                        <input type="text" class="input-field" placeholder="Username" required>
+                        <input type="email" class="input-field" placeholder="E-mail adress" required>
                         <input type="text" class="input-field" placeholder="Enter Password" required>
                         <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
                         <button type="submit" class="submit-button">Register</button>
@@ -69,13 +70,53 @@
                 x.style.left = "-400px";
                 y.style.left = "50px";
                 z.style.left = "110px";
-                z.style.background = "linear-gradient(to right, #ff914d, #ffbd59, #ffbd59)";
             }
             function login(){
                 x.style.left = "50px";
                 y.style.left = "450px";
                 z.style.left = "0px";
-                z.style.background = "linear-gradient(to right, #ffbd59, #ffbd59, #ff914d)";
+            }
+
+            //window.onscroll = function(e){
+            //console.log(this.oldScroll < this.scrollY);
+            //this.oldScroll = this.scrollY;
+
+            //function scrollCheck() {
+            //    console.log(this.oldScroll > this.scrollY);
+            //    this.oldScroll = this.scrollY;
+            //    console.log(scrolldown);
+                //if (this.oldScroll = false) {
+                //    scrollDown();
+                //}
+            //}
+            function scrollDown(){
+                console.log(scrolldown);
+            }
+
+            //window.onwheel = e => {
+            //    if(e.deltaY >= 0){
+            //        // Scrolling Down with mouse
+            //        console.log('Scroll Down');
+            //    } else {
+            //        // Scrolling Up with mouse
+            //        console.log('Scroll Up');
+            //    }
+            //}
+            function scrollFunction() {
+                // do your stuff here;
+            }
+
+            window.onscroll = e => {
+                if(e.scrollY >= 0){
+                    // Scrolling Down with mouse
+                    console.log('Scroll Down');
+                } else {
+                    // Scrolling Up with mouse
+                    console.log('Scroll Up');
+                }
+            }
+            if (userHasScrolledDown) {
+                console.log(scrolldown);
             }
         </script>
     </body>
