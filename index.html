@@ -13,12 +13,16 @@
         <!--header-->
         <section class="header">
             <nav>
-                <div class="nav-links">
+                <div class="nav-img">
                     <a href="index.html"><img src="images/ARGFNORWAY logo.png" alt=""></a>
+                </div>
+                <div class="nav-links">
                     <ul>
                         <li><a href="sides/contact.html">Contact</a></li>
                         <li><a href="sides/projects.html">Projects</a></li>
                     </ul>
+                </div>
+                <div class="nav-icons">
                     <a href="sides/login.html"><i class="fa-solid fa-circle-user"></i></a>
                 </div>
             </nav>
@@ -67,5 +71,22 @@
                 </div>
             </div>
         </section>
+        <script>
+            var scrollBefore = 0;
+            window.addEventListener('scroll',function(e){
+                const scrolled = window.scrollY;
+
+                if(scrollBefore > scrolled){
+                    console.log("ScrollUP");
+                    scrollBefore = scrolled;
+                    //Desired action
+                }else{
+                    scrollBefore = scrolled;
+                    console.log("ScrollDOWN");
+                    //Desired action
+                }
+
+            })
+        </script>
     </body>
 </html>

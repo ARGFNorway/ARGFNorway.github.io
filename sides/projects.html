@@ -1,1 +1,92 @@
 projects.html
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARGFNorway</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e25b8678b4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--header-->
+        <section class="header">
+            <nav>
+                <div class="nav-img">
+                    <a href="../index.html"><img src="../images/ARGFNORWAY logo.png" alt=""></a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="../sides/contact.html">Contact</a></li>
+                        <li><a href="../sides/projects.html" id="side-on">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="nav-icons">
+                    <a href="../sides/login.html"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>make website<!--Univerity shit--></h1>
+                <p>Make website <br><!--you dumbfuck--></p>
+                <a href="" class="button-class">be smarter</a>
+            </div>
+        </section>
+        <!--projects-->
+        <section class="projects">
+            <h1>My projects</h1>
+            <p>myprojectsandmoreaboutthem</p>
+            <div class="row">
+                <a href="https://www.youtube.com/channel/UCvFVxTilLq9Pz1NQaUv8rrA" target="_blank" class="projects-col">
+                    <h3>project 1</h3>
+                    <p>project 1 info oehuknd jdfnj jk ijs s jiw skjlds js kwi</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCvFVxTilLq9Pz1NQaUv8rrA" target="_blank" class="projects-col">
+                    <h3>project 2</h3>
+                    <p>project 2 info oehuknd jdfnj jk ijs s jiw skjlds js kwi</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCvFVxTilLq9Pz1NQaUv8rrA" target="_blank" class="projects-col">
+                    <h3>project 3</h3>
+                    <p>project 3 info oehuknd jdfnj jk ijs s jiw skjlds js kwi</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCvFVxTilLq9Pz1NQaUv8rrA" target="_blank" class="projects-col">
+                    <h3>project 4</h3>
+                    <p>project 4 info oehuknd jdfnj jk ijs s jiw skjlds js kwi</p>
+                </a>
+            </div>
+        </section>
+        <!--footer-->
+        <section class="footer">
+            <h4>Website designed by ARGFNorway</h4>
+            <p>This website was made using HTML and CSS.</p>
+            <div class="icons">
+                <div class="an">
+                    <a href="https://www.youtube.com/channel/UCsKjQgIbXUiXxGEpESEKNsw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="ang">
+                    <a href="https://www.youtube.com/channel/UCvFVxTilLq9Pz1NQaUv8rrA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="dis">
+                    <a href="https://discord.gg/vyb6qphmXc" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </section>
+        <script>
+            var scrollBefore = 0;
+            window.addEventListener('scroll',function(e){
+                const scrolled = window.scrollY;
+
+                if(scrollBefore > scrolled){
+                    console.log("ScrollUP");
+                    scrollBefore = scrolled;
+                    //Desired action
+                }else{
+                    scrollBefore = scrolled;
+                    console.log("ScrollDOWN");
+                    //Desired action
+                }
+
+            })
+        </script>
+    </body>
+</html>

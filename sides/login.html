@@ -13,13 +13,17 @@
         <!--header-->
         <section class="header">
             <nav>
-                <div class="nav-links">
+                <div class="nav-img">
                     <a href="../index.html"><img src="../images/ARGFNORWAY logo.png" alt=""></a>
+                </div>
+                <div class="nav-links">
                     <ul>
-                        <li><a href="sides/contact.html">Contact</a></li>
-                        <li><a href="sides/projects.html">Projects</a></li>
+                        <li><a href="../sides/contact.html">Contact</a></li>
+                        <li><a href="../sides/projects.html">Projects</a></li>
                     </ul>
-                    <a href="../sides/login.html"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+                <div class="nav-icons">
+                    <a href="../sides/login.html" id="side-on"><i class="fa-solid fa-circle-user"></i></a>
                 </div>
             </nav>
             <div class="login">
@@ -30,18 +34,21 @@
                         <button type="button" class="toggle-button" onclick="register()">Register</button>
                     </div>
                     <form id="Login" class="input-group">
+                        <a>Log in with your <a href="https://argfnorway.github.io">Falling Hill account</a> Here</a>
                         <input type="text" class="input-field" placeholder="Username or E-mail adress" required>
                         <input type="text" class="input-field" placeholder="Password" required>
                         <input type="checkbox" class="chech-box"><a>Remember Password</a>
+                        <input type="checkbox" class="chech-box"><a>I agree to the <a href="https://argfnorway.github.io">Cookie policy</a></a>
                         <button type="submit" class="submit-button">Log In</button>
-                        <button type="button" class="new-user-button" onclick="register()">Create new Account</button>
+                        <button type="button" class="login-type-button" onclick="register()">Create new Account</button>
                     </form>
                     <form id="Register" class="input-group">
                         <input type="text" class="input-field" placeholder="Username" required>
                         <input type="email" class="input-field" placeholder="E-mail adress" required>
                         <input type="text" class="input-field" placeholder="Enter Password" required>
-                        <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                        <input type="checkbox" class="chech-box"><a>I agree to the terms & conditions</a>
                         <button type="submit" class="submit-button">Register</button>
+                        <button type="button" class="login-type-button" onclick="login()">I already have an Account</button>
                     </form>
                 </div>
             </div>
@@ -76,48 +83,21 @@
                 y.style.left = "450px";
                 z.style.left = "0px";
             }
+            var scrollBefore = 0;
+            window.addEventListener('scroll',function(e){
+                const scrolled = window.scrollY;
 
-            //window.onscroll = function(e){
-            //console.log(this.oldScroll < this.scrollY);
-            //this.oldScroll = this.scrollY;
-
-            //function scrollCheck() {
-            //    console.log(this.oldScroll > this.scrollY);
-            //    this.oldScroll = this.scrollY;
-            //    console.log(scrolldown);
-                //if (this.oldScroll = false) {
-                //    scrollDown();
-                //}
-            //}
-            function scrollDown(){
-                console.log(scrolldown);
-            }
-
-            //window.onwheel = e => {
-            //    if(e.deltaY >= 0){
-            //        // Scrolling Down with mouse
-            //        console.log('Scroll Down');
-            //    } else {
-            //        // Scrolling Up with mouse
-            //        console.log('Scroll Up');
-            //    }
-            //}
-            function scrollFunction() {
-                // do your stuff here;
-            }
-
-            window.onscroll = e => {
-                if(e.scrollY >= 0){
-                    // Scrolling Down with mouse
-                    console.log('Scroll Down');
-                } else {
-                    // Scrolling Up with mouse
-                    console.log('Scroll Up');
+                if(scrollBefore > scrolled){
+                    console.log("ScrollUP");
+                    scrollBefore = scrolled;
+                    //Desired action
+                }else{
+                    scrollBefore = scrolled;
+                    console.log("ScrollDOWN");
+                    //Desired action
                 }
-            }
-            if (userHasScrolledDown) {
-                console.log(scrolldown);
-            }
+
+            })
         </script>
     </body>
 </html>

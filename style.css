@@ -29,41 +29,51 @@ nav{
     text-align: center;
     opacity: 1;
     display: inline-flex;
+    justify-content: center;
+}
+.nav-links ul{
+    padding: 0 10%;
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
-    position: relative;
 }
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 24px;
 }
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
+#side-on{
+    border-radius: 15px;
+    transition: 0.5s;
+    color: #0006;
+}
+#side-on-index{
+    .nav-img img{
+        height: 30px;
+        border-radius: 20%;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+.nav-links ul li{
     background: transparent;
-    display: block;
-    margin: auto;
+    border-radius: 12px;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
-    background: #fff;
-    width: 100%;
+.nav-links ul li:hover{
+    background: #0003;
 }
-.nav-links img{
-    color: #fff;
-    text-decoration: none;
+.nav-img img{
     height: 30px;
-    padding: 8px 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-.nav-links a{
+.nav-icons a{
     color: #fff;
     margin: auto;
     margin-right: 0;
+    padding: 8px 12px;
 }
 .text-box{
     width: 90%;
@@ -82,10 +92,7 @@ nav{
     font-size: 14px;
     color: #fff;
 }
-nav .fa{
-    display: none;
-}
-@media(max-width: 400px){
+@media(max-width: 435px){
     .nav-links ul li a{
         font-size: 14px;
     }
@@ -94,23 +101,32 @@ nav .fa{
     }
     .nav-links a{
         font-size: 14px;
+        padding: 6.667px 10px;
     }
     .nav-links ul li{
         padding: 6.667px 10px;
     }
+    .nav-links img{
+        height: 14px;
+    }
 }
-@media(max-width: 275px){
+@media(max-width: 305px){
     .nav-links ul li a{
         font-size: 10px;
     }
     nav{
         padding: 4px 4%;
+        width: 95%;
     }
     .nav-links a{
         font-size: 10px;
+        padding: 5.332px 8px;
     }
     .nav-links ul li{
         padding: 5.332px 8px;
+    }
+    .nav-links img{
+        height: 10px;
     }
 }
 @media(max-width: 225px){
@@ -122,6 +138,7 @@ nav .fa{
     }
     .nav-links a{
         font-size: 7px;
+        padding: 4px 6px;
     }
     .nav-links ul li{
         padding: 4px 6px;
@@ -133,9 +150,11 @@ nav .fa{
     }
     nav{
         padding: 0.5px 2%;
+        width: 100%;
     }
     .nav-links a{
         font-size: 5px;
+        padding: 2.667px 4px;
     }
     .nav-links ul li{
         padding: 2.667px 4px;
@@ -255,7 +274,7 @@ a, u {
 /*login*/
 .login{
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 .login-box{
     width: 380px;
@@ -307,11 +326,6 @@ a, u {
     position: relative;
     cursor: pointer;
 }
-.button-class:hover{
-    border: 1px solid #c3a;
-    background: #fb3;
-    transition: 0.5s;
-}
 .toggle-button{
     padding: 10px 30px;
     cursor: pointer;
@@ -346,7 +360,7 @@ a, u {
     border-bottom-left-radius: 5px;
     margin-top: 5px;
 }
-.new-user-button{
+.login-type-button{
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
@@ -363,7 +377,7 @@ a, u {
     margin-top: 5px;
 }
 .chech-box{
-    margin: 30px 10px 30px 0;
+    margin: 10px 10px 10px 0;
 }
 span{
     color: #fff;
