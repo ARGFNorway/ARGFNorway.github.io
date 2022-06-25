@@ -11,6 +11,30 @@
     background-size: cover;
     position: relative;
 }
+.static-overlay{
+    display: flex;
+    padding: 20px 1%;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    align-items: left;
+    z-index: 200;
+    overflow: hidden;
+    background-attachment: scroll;
+    background-color: #0006;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+.static-overlay a{
+    color: #fff;
+}
 nav{
     display: flex;
     padding: 10px 5%;
@@ -44,25 +68,13 @@ nav{
     text-decoration: none;
     font-size: 24px;
 }
-#side-on{
-    border-radius: 15px;
-    transition: 0.5s;
-    color: #0006;
-}
-#side-on-index{
-    .nav-img img{
-        height: 30px;
-        border-radius: 20%;
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-    }
-}
 .nav-links ul li{
     background: transparent;
     border-radius: 12px;
     transition: 0.5s;
 }
 .nav-links ul li:hover{
-    background: #0003;
+    background: #0002;
 }
 .nav-img img{
     height: 30px;
@@ -73,10 +85,16 @@ nav{
     color: #fff;
     margin: auto;
     margin-right: 0;
-    padding: 8px 12px;
+    padding: 10px 12px;
+    background: transparent;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.nav-icons a:hover{
+    background: #0002;
 }
 .text-box{
-    width: 90%;
+    width: 100%;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -91,6 +109,10 @@ nav{
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
+}
+#side-on{
+    transition: 0.5s;
+    color: #000;
 }
 @media(max-width: 435px){
     .nav-links ul li a{
@@ -237,39 +259,42 @@ a, u {
     }
     .an{
         margin: 5px;
-        padding-top: 4px;
+        padding-top: 4.5px;
+    }
+    .an a{
+        color: #fff;
+        padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 6px;
         padding-right: 6px;
         background: #ff914d;
         border-radius: 20%;
     }
-    .an a{
-       color: #fff;
-    }
     .ang{
         margin: 5px;
-        padding-top: 4px;
-        padding-bottom: 5px;
+        padding-top: 4.5px;
+    }
+    .ang a{
+        color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5.5px;
         padding-left: 6px;
         padding-right: 6px;
         background: #5ce1e6;
         border-radius: 20%;
     }
-    .ang a{
-        color: #fff;
-    }
     .dis{
         margin: 5px;
         padding-top: 4px;
-        padding-bottom: 5px;
+    }
+    .dis a{
+        color: #fff;
+        padding-top: 4.5px;
+        padding-bottom: 5.5px;
         padding-left: 5px;
         padding-right: 5px;
         background: #55a0fb;
         border-radius: 20%;
-    }
-    .dis a{
-        color: #fff;
     }
 /*login*/
 .login{
@@ -377,7 +402,15 @@ a, u {
     margin-top: 5px;
 }
 .chech-box{
-    margin: 10px 10px 10px 0;
+    margin: 10px 20px 10px 0;
+    padding: 20px;
+    display: inline;
+}
+.chech-box1{
+    display: block;
+}
+.chech-box2{
+    display: block;
 }
 span{
     color: #fff;
