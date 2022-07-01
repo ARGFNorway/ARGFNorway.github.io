@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 .header{
@@ -41,8 +42,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     z-index: 200;
-    background: linear-gradient(to right, #ffbd59, #ffbd59, #ff914d);
-    width: 90%;
+    background: linear-gradient(to right, #ff914d, #ffbd59, #ffbd59, #ffbd59, #ff914d);
+    width: 100%;
     overflow: hidden;
     background-attachment: scroll;
     top: 0;
@@ -67,14 +68,21 @@ nav{
     color: #fff;
     text-decoration: none;
     font-size: 24px;
+    transition: 0.5s;
 }
-.nav-links ul li{
+/*.nav-links ul li{
     background: transparent;
     border-radius: 12px;
     transition: 0.5s;
 }
 .nav-links ul li:hover{
     background: #0002;
+}*/
+.nav-links ul li a:hover{
+    color: #666;
+}
+.nav-icons a:hover{
+    color: #666;
 }
 .nav-img img{
     height: 30px;
@@ -89,9 +97,6 @@ nav{
     background: transparent;
     border-radius: 12px;
     transition: 0.5s;
-}
-.nav-icons a:hover{
-    background: #0002;
 }
 .text-box{
     width: 100%;
@@ -111,7 +116,6 @@ nav{
     color: #fff;
 }
 #side-on{
-    transition: 0.5s;
     color: #000;
 }
 @media(max-width: 435px){
@@ -211,7 +215,6 @@ p{
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
-    box-sizing: border-box;
     transition: 0.25s;
 }
 h3{
@@ -258,43 +261,31 @@ a, u {
         justify-content: center;
     }
     .an{
-        margin: 5px;
-        padding-top: 4.5px;
-    }
-    .an a{
-        color: #fff;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding: 5px 6px;
         background: #ff914d;
         border-radius: 20%;
+        margin: 5px;
+    }
+    .an i{
+        color: #fff;
     }
     .ang{
-        margin: 5px;
-        padding-top: 4.5px;
-    }
-    .ang a{
-        color: #fff;
-        padding-top: 5px;
-        padding-bottom: 5.5px;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding: 5px 6px;
         background: #5ce1e6;
         border-radius: 20%;
+        margin: 5px;
+    }
+    .ang i{
+        color: #fff;
     }
     .dis{
-        margin: 5px;
-        padding-top: 4px;
-    }
-    .dis a{
-        color: #fff;
-        padding-top: 4.5px;
-        padding-bottom: 5.5px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 5px;
         background: #55a0fb;
         border-radius: 20%;
+        margin: 5px;
+    }
+    .dis i{
+        color: #fff;
     }
 /*login*/
 .login{
