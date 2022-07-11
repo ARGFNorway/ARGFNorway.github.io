@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
 .header{
-    min-height: 100vh;
+    min-height: 95vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
     background-position: center;
@@ -210,7 +211,7 @@ nav{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 h1{
     font-size: 36px;
@@ -221,18 +222,17 @@ p{
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    padding: 10px;
+    margin: 10px;
 }
 .row{
-    margin-top: 5%;
+    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .projects-col{
-    flex-basis: 23%;
+    /*flex-basis: 23%;"4 inline"*/
     background: #d6d6d6;
     border-radius: 10px;
-    margin-bottom: 5%;
     padding: 20px 12px;
     transition: 0.25s;
 }
@@ -245,18 +245,6 @@ h3{
 .projects-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
-/*link-click*/
-.link-click{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-a, u {
-    text-decoration: none;
 }
 @media(max-width: 800px){
     .row{
@@ -283,7 +271,7 @@ a, u {
         padding: 5px 6px;
         background: #ff914d;
         border-radius: 20%;
-        margin: 5px;
+        margin: 5px 15px;
     }
     .an i{
         color: #fff;
@@ -292,7 +280,7 @@ a, u {
         padding: 5px 6px;
         background: #5ce1e6;
         border-radius: 20%;
-        margin: 5px;
+        margin: 5px 15px;
     }
     .ang i{
         color: #fff;
@@ -301,10 +289,31 @@ a, u {
         padding: 5px;
         background: #55a0fb;
         border-radius: 20%;
-        margin: 5px;
+        margin: 5px 15px;
     }
     .dis i{
         color: #fff;
+    }
+    /*links*/
+    .links{
+        margin: 10px;
+    }
+    .links a{
+        color: #555;
+        font-size: 13px;
+    }
+    .links#break{
+        visibility: hidden;
+    }
+    @media(max-width: 340px){
+        .links a{
+            font-size: 11px;
+        }
+    }
+    @media(max-width: 340px){
+        .links a{
+            font-size: 11px;
+        }
     }
 /*login*/
 .login{
